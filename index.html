@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>수식 자동화</title>
+  </head>
+  <body>
+    <h3>간단한 수식 자동화 페이지</h3>
+    <div>
+      <span>영문</span>
+      <input type="text" class="inputAlpha" value="A" />
+      <span>개수</span>
+      <input type="number" class="inputNumber" value="30" />
+      <span>범위</span>
+      <input type="text" class="inputRange" value="$C$2:$AF$33" />
+      <span>열 번호</span>
+      <input type="number" class="inputRow" value="2" />
+      <button class="inputBtn">입력</button>
+      <div>
+        <small>
+          사용방법: 원하는 열에 해당하는 알파벳을 입력 후 입력 버튼을 클릭하면
+          수식이 나옵니다.
+        </small>
+      </div>
+    </div>
+    <table class="radeTable">
+      <!-- <tr>
+        <td>
+          <span class="funcLine"
+            >=iferror(vlookup("A2",$C$2:$AF$33,2,false),"")</span
+          >
+        </td>
+      </tr> -->
+    </table>
+    <div class="tutorial"></div>
+
+    <script src="calcul.js"></script>
+  </body>
+</html>
